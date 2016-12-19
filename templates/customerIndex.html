@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MDB Customer Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  @keyframes backgroundScrollo {
+		from {background-position: 0 0;}
+		to {background-position: -600px 0;}
+	}
+  		div.text-center{
+		  position: relative;
+		  padding: 0px;
+          font-family:sans-serif;
+          height: 600px;
+          width: 500px;
+          margin: auto;
+          border: solid 6px tomato;
+		  background: linear-gradient(to bottom right,aquamarine,aliceblue,aquamarine);       
+	  }
+	  body {
+    	background-image: url("http://cdn.wallpapersafari.com/90/27/czWUGj.jpg");
+		animation: backgroundScrollo 15s linear infinite;
+		background-size: 1500px 800px;
+	}
+  </style>
+</head>
+<body>
+	
+<div class="text-center">
+<br><br><br><br>
+<a href="/search_Showings"><button type="button" class="btn btn-warning btn-md">Search Showings to Continue</button></a><br/><br>
+	
+<a href="/attend_Showings"><button type="button" class="btn btn-warning btn-md">Buy Tickets</button></a><br><br/>
+
+<a href="/rate_Showings"><button type="button" class="btn btn-warning btn-md">Rating a Showing</button></a><br><br/>
+
+<a href="/searchViewed"><button type="button" class="btn btn-primary btn-md">View Watched Movies' Info</button></a><br><br/>
+
+<a href="/searchProfile"><button type="button" class="btn btn-primary btn-md">View Your Profile</button></a><br/><br>
+
+<a href="/sql_injection"><button type="button" class="btn btn-danger btn-md">Try a SQL injection attack</button></a>
+<br><br><br><br><br>
+<a href="/userIndex"><button type="button" class="btn btn-success btn-md"><span class="glyphicon glyphicon-chevron-left"></span> Back to Login Page</button></a><br/>
+
+</div>
+
+</body>
+</html>

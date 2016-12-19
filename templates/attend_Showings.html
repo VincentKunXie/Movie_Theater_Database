@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MDB Customer Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  @keyframes backgroundScrollo {
+		from {background-position: 0 0;}
+		to {background-position: -600px 0;}
+	}
+  		div.text-center{
+		  position: relative;
+		  padding: 0px;
+          font-family:sans-serif;
+          height: 600px;
+          width: 500px;
+          margin: auto;
+          border: solid 6px tomato;
+		  background: linear-gradient(to bottom right,aquamarine,aliceblue,aquamarine);       
+	  }
+	  body {
+    	background-image: url("http://cdn.wallpapersafari.com/90/27/czWUGj.jpg");
+		animation: backgroundScrollo 15s linear infinite;
+		background-size: 1500px 800px;
+	}
+  </style>
+</head>
+<body>
+	
+<div class="text-center">
+	<br><br><br><br>
+
+<form action="/attend_Showings_submit" method="post">
+	Please Select Your Name Here: <br><br>
+	<select name="customer">
+{% for customer in customers%}
+    <option value="{{customer.0}}">{{customer.1}} {{customer.2}}</option>
+{% endfor %} 
+  </select><br><br><br><br>
+  Select Showings Here: <br><br>
+  <select name="showing">
+{% for showing in showings%}
+    <option value="{{showing.0}}">{{showing.1}} {{showing.2}}{{showing.3}} {{showing.4}} </option>
+{% endfor %}
+  </select>
+    <h1>{{msg}}</h1>
+  <br>
+  <input type="submit" value="Book This Showing">
+</form><br><br>
+<a href="/customerIndex"><button type="button" class="btn btn-success btn-md"><span class="glyphicon glyphicon-chevron-left"></span> Back </button></a><br/>
+</div>
+</body>
+</html>
+ 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Movie Theatre Database</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+  
+		@keyframes backgroundScrolli {
+		from {background-position: 0 0;}
+		to {background-position: 0 -600px;}
+	}
+			@keyframes backgroundScrollo {
+		from {background-position: 0 0;}
+		to {background-position: -600px 0;}
+	}
+      div.text-center{
+		  position: relative;
+          font-family:sans-serif;
+          top: 50%;
+          height: 600px;
+          width: 500px;
+          margin: auto;
+          border: solid 8px tomato;
+		  background-image:url("https://fogsmoviereviews.files.wordpress.com/2012/05/movie-theater-auditorium.jpg"); 
+		  background-repeat: repeat;
+		  background-size: 500px 600px;
+		  animation: backgroundScrolli 15s linear infinite;	  
+	  	}
+      
+	  div.user{
+		  position: absolute;
+		  top: 33%;
+		  left:32%;	  
+	  }
+	  
+	  hr{
+		  border:dashed; 
+		  color: pink;	  
+	  }
+	  h1{
+		  background: -webkit-linear-gradient(white, pink,white);
+  		  -webkit-background-clip: text;
+  		  -webkit-text-fill-color: transparent;
+	  }
+	  h2{ 
+		  position: absolute;
+		  top: 70%;
+		  left: 16%;
+		  font-size: 138px;
+		  font-family: Impact;
+		  background: -webkit-linear-gradient(black, purple,black);
+  		  -webkit-background-clip: text;
+  		  -webkit-text-fill-color: transparent;
+	  }	  
+	  body {
+    	background-image: url("http://cdn.wallpapersafari.com/90/27/czWUGj.jpg");
+		animation: backgroundScrollo 15s linear infinite;	
+		background-size: 1500px 800px;		
+	 }
+	  
+</style>
+</head>
+
+<body>
+
+<div class="text-center">
+ 
+  <h1 align="center">Movie Theatre Database</h1>
+  <hr />
+  <div class="user">
+  <a href="/staffIndex"><button type="button" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-wrench"></span> Staff Login</button></a><br/>
+  <br /><br><br>
+  <a href="/customerIndex"><button type="button" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-user"></span> Customer Login</button></a><br/>
+  </div>
+  <br />
+  <h2 align="center">HELLO!</h2>
+</div>
+
+</body>
+</html>
